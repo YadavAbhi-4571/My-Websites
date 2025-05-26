@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    font-family: Montserrat;
+    border: border-box
+}
+
+body {
+    margin: 0px;
+    background-image: url('comp.avif');
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    height: 13%;
+    width: 100%;
+    background-color: rgba(3, 2, 2, 0.26);
+    justify-content: space-evenly;
+    position: fixed;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.menu-bar:hover:{
+   background-color:black;
+}
+
+h1 {
+    cursor: pointer;
+    color: rgb(239, 234, 234);
+    font-size: 25px;
+    margin-left: -85px;
+    text-shadow: 2px 1px 3px red;
+
+
+}
+
+h1 {
+    color: magenta;
+}
+
+.menu-bar h1 {
+    animation: example1 4s linear
+}
+
+
+@keyframes example1 {
+    0% {
+        font-size: 0px;
+        color: blue
+    }
+
+    30% {
+        font-size: 10px;
+        color: red
+    }
+
+    60% {
+        font-size: 20px;
+        color: green
+    }
+}
+
+a {
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+
+a:hover {
+    color: rgb(243, 207, 7);
+    text-decoration: underline;
+    transform: scale(1.1, 1.05);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h2 {
+    color: whitesmoke;
+    margin-top: 25%;
+    margin-right: 40px;
+    font-size: 2.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: rgb(214, 213, 213);
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 12px;
+}
+
+h4 {
+    color: aquamarine;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+@keyframes writer {
+    0% {
+        content: ""
+    }
+
+    5% {
+        content: "I"
+    }
+
+    10% {
+        content: "I "
+    }
+
+    15% {
+        content: "I A"
+    }
+
+    20% {
+        content: "I AM"
+    }
+
+    25% {
+        content: "I AM "
+    }
+
+    30% {
+        content: "I AM P"
+    }
+
+    35% {
+        content: "I AM PR"
+    }
+
+    40% {
+        content: "I AM PRO"
+    }
+
+    45% {
+        content: "I AM PROG"
+    }
+
+    50% {
+        content: "I AM PROGR"
+    }
+
+    55% {
+        content: "I AM PROGRA"
+    }
+
+    60% {
+        content: "I AM PROGRAM"
+    }
+
+    65% {
+        content: "I AM PROGRAMM"
+    }
+
+    70% {
+        content: "I AM PROGRAMME"
+    }
+
+    75% {
+        content: "I AM PROGRAMMER"
+    }
+}
+
+h4::before {
+    content: "";
+    animation: writer 10s linear infinite;
+}
+
+h4::after {
+    content: "|";
+}
+
+h2 {
+    animation: example 2s linear infinite
+}
+
+@keyframes example {
+    0% {
+        color: rgb(252, 10, 10);
+    }
+
+    50% {
+        color: whitesmoke
+    }
+
+    100% {
+        color: rgb(9, 247, 9)
+    }
+}
+
+p {
+    color: rgb(142, 200, 250);
+}
+
+.icon i {
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: 55px;
+}
+
+.container1 {
+
+    width: 75%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.Form {
+    margin-top: 35px;
+}
+
+
+
+.container1 {
+    position: sticky
+}
+.Form{
+    box-shadow:-1px -2px 9px red;
+}
