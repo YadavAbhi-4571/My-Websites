@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    font-family: Montserrat;
+    border: border-box
+}
+
+body {
+    margin: 0px;
+    background-image: url('C:/Users/admin/Downloads/comp.avif');
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    height: 13%;
+    width: 100%;
+    background-color: rgba(3, 2, 2, 0.034);
+    justify-content: space-evenly;
+    position: fixed;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+h1 {
+    cursor: pointer;
+    color: rgb(239, 234, 234);
+    font-size: 25px;
+    margin-left: -85px;
+    text-shadow: 2px 1px 3px red;
+    color: magenta;
+}
+
+.menu-bar h1 {
+    animation: example1 4s linear
+}
+
+
+@keyframes example1 {
+    0% {
+        font-size: 0px;
+        color: blue
+    }
+
+    30% {
+        font-size: 10px;
+        color: red
+    }
+
+    60% {
+        font-size: 20px;
+        color: green
+    }
+}
+
+a {
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    color: white;
+    font-family: 'varela Round', sans-serif;
+    font-weight: bolder;
+
+}
+
+a:hover {
+    color: rgb(243, 207, 7);
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+h2 {
+    color: whitesmoke;
+    margin-top: 25%;
+    margin-right: 40px;
+    font-size: 2.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    text-shadow: -0.5px -0.5px 3px cyan;
+    transition-property: transform;
+}
+
+h2:hover {
+    transform: scaleX(1.3);
+    cursor: pointer;
+}
+
+h3 {
+    color: rgb(214, 213, 213);
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 12px;
+}
+
+h4 {
+    color: aquamarine;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+
+@keyframes writer {
+    0% {
+        content: ""
+    }
+
+    5% {
+        content: "I"
+    }
+
+    10% {
+        content: "I "
+    }
+
+    15% {
+        content: "I A"
+    }
+
+    20% {
+        content: "I AM"
+    }
+
+    25% {
+        content: "I AM "
+    }
+
+    30% {
+        content: "I AM P"
+    }
+
+    35% {
+        content: "I AM PR"
+    }
+
+    40% {
+        content: "I AM PRO"
+    }
+
+    45% {
+        content: "I AM PROG"
+    }
+
+    50% {
+        content: "I AM PROGR"
+    }
+
+    55% {
+        content: "I AM PROGRA"
+    }
+
+    60% {
+        content: "I AM PROGRAM"
+    }
+
+    65% {
+        content: "I AM PROGRAMM"
+    }
+
+    70% {
+        content: "I AM PROGRAMME"
+    }
+
+    75% {
+        content: "I AM PROGRAMMER"
+    }
+}
+
+h4::before {
+    content: "";
+    animation: writer 10s linear infinite;
+}
+
+h4::after {
+    content: "|";
+}
+
+h2 {
+    animation: example 2s linear infinite
+}
+
+@keyframes example {
+    0% {
+        color: rgb(252, 10, 10);
+    }
+
+    50% {
+        color: whitesmoke
+    }
+
+    100% {
+        color: rgb(9, 247, 9)
+    }
+}
+
+p {
+    color: rgb(142, 200, 250);
+}
+
+.icon i {
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: 55px;
+}
+
+.container1 {
+
+    width: 75%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.Form {
+    margin-top: 35px;
+}
+
+
+
+.container1 {
+    position: relative;
+}
+
+.Form {
+    box-shadow: -0.5px 0.5px 9px red;
+    height: 350px;
+    padding: 10px;
+}
+
+.menu-bar a {
+    width: max-content;
+    position: relative;
+
+}
+
+.menu-bar a::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    left: 10px;
+    background-color: rgb(243, 207, 7);
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+    border: radius 50px;
+    margin-left: -10px;
+}
+
+.menu-bar a:hover::after {
+    transform: scaleX(1)
+}
+
+.menu-bar a:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.col-12 button {
+    margin-top: 35px;
+}
